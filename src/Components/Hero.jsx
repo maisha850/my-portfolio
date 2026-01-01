@@ -15,6 +15,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
+          
           <p className="text-sm uppercase tracking-widest text-teal-400 mb-4">
             Frontend Developer
           </p>
@@ -80,3 +81,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
