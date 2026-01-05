@@ -7,19 +7,19 @@ const Projects = () => {
     <section id="projects" className="bg-[#0b0f14] py-24">
       <div className="max-w-7xl mx-auto px-6">
         
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center">
-          Projects that make an{" "}
-          <span className="text-teal-400">impact</span>
-        </h2>
+         <p className="text-sm  font-bold uppercase tracking-widest text-teal-400 mb-4">
+          Projects
+          </p>
 
-        <p className="text-gray-400 text-center max-w-xl mx-auto mt-4">
-          A selection of projects that showcase my skills in frontend
-          development and UI design.
-        </p>
+          <h2 className="text-3xl uppercase md:text-5xl font-bold text-white leading-tight">
+            My
+           
+              <span className="text-teal-400 ml-2">Works</span>
+          </h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <div className="grid  gap-8 mt-16">
+          {projects.map((project , index) => (
+            <ProjectCard key={project.id} project={project} index={index} />
           ))}
         </div>
       </div>

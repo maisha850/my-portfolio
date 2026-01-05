@@ -13,3 +13,12 @@
 .animate-marquee {
   animation: marquee 25s linear infinite;
 }
+.bg-primary{
+  @apply bg-teal-500
+}
+.text-primary {
+  @apply text-teal-500
+}
+.border-primary{
+  @apply border border-teal-500
+}

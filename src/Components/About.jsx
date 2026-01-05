@@ -12,27 +12,39 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-sm uppercase tracking-widest text-teal-400 mb-4">
-            About Me
+           <p className="text-sm  font-bold uppercase tracking-widest text-teal-400 mb-4">
+            About
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Building the future,
-            <br />
-            <span className="text-teal-400">one component at a time.</span>
+          <h2 className="text-3xl uppercase md:text-5xl font-bold text-white leading-tight">
+            About
+           
+              <span className="text-teal-400 ml-2">Me</span>
           </h2>
 
+          
+
           <p className="text-gray-400 mt-6 leading-relaxed max-w-xl">
-            I’m a frontend developer focused on creating clean, responsive, and
-            user-friendly web interfaces using React. I enjoy turning ideas and
-            designs into interactive digital experiences while continuously
-            improving my skills.
+            My journey into programming started with curiosity — I wanted to
+            understand how websites actually work behind the scenes. What began
+            as simple HTML and CSS experiments quickly grew into a passion for
+            building interactive user interfaces using JavaScript and React.
           </p>
 
           <p className="text-gray-400 mt-4 leading-relaxed max-w-xl">
-            As a fresher, I prioritize writing clean code, learning best
-            practices, and building visually polished UIs that feel smooth and
-            intuitive.
+            I enjoy working on frontend projects where design meets logic.
+            Transforming UI designs into responsive, smooth, and accessible
+            experiences is the part I love most. I care deeply about clean code,
+            reusable components, and small details that make a big difference
+            in user experience.
+          </p>
+
+          <p className="text-gray-400 mt-4 leading-relaxed max-w-xl">
+            Outside of coding, I enjoy exploring creative activities like
+            sketching UI ideas, reading tech blogs, and spending time on
+            hobbies that help me reset — whether that’s listening to music,
+            watching documentaries, or light outdoor activities. These moments
+            help me stay inspired and focused.
           </p>
         </motion.div>
 
@@ -46,25 +58,25 @@ const About = () => {
         >
           {[
             {
-              title: "Clean Code",
-              desc: "Readable, maintainable and well-structured components.",
+              title: "My Journey",
+              desc: "Started with basic web fundamentals and evolved into building real-world React applications.",
             },
             {
-              title: "Responsive UI",
-              desc: "Mobile-first layouts that work on all screen sizes.",
+              title: "What I Enjoy",
+              desc: "Creating clean UI, smooth interactions, and responsive layouts.",
             },
             {
-              title: "Modern Tools",
-              desc: "React, Tailwind CSS, Git, and Framer Motion.",
+              title: "My Toolkit",
+              desc: "React, Tailwind CSS, MongoDB, Node.js, Firebase, and Framer Motion.",
             },
             {
-              title: "Continuous Learning",
-              desc: "Always improving through projects and practice.",
+              title: "Beyond Coding",
+              desc: "Exploring creativity, learning new things, and staying curious.",
             },
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-6 hover:border-cyan-400/40 transition"
+              className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-6 hover:border-teal-400/40 transition"
             >
               <h3 className="text-white font-semibold text-lg">
                 {item.title}

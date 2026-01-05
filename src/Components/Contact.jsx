@@ -14,18 +14,18 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <p className="text-sm uppercase tracking-widest text-teal-400 mb-4">
+          <p className="text-sm  font-bold uppercase tracking-widest text-teal-400 mb-4">
             Contact
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-            Let’s build something
-            <br />
-            <span className="text-teal-400">great together</span>
+          <h2 className="text-3xl uppercase md:text-5xl font-bold text-white leading-tight">
+            Reach Out
+           
+              <span className="text-teal-400 ml-2">Me</span>
           </h2>
 
           <p className="text-gray-400 mt-6 max-w-md">
-            I’m open to internships, junior roles, and freelance opportunities.
+         
             Feel free to reach out if you’d like to connect or collaborate.
           </p>
 
@@ -70,7 +70,7 @@ const Contact = () => {
           <form className="space-y-6">
             <div>
               <label className="block text-sm text-gray-400 mb-1">
-                Maisha Tasnim Khan
+              Name
               </label>
               <input
                 type="text"
