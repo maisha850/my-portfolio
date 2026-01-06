@@ -142,7 +142,7 @@ const ProjectCard = ({ project, index }) => {
             <a
               href={project.live}
               target="_blank"
-              className="flex items-center gap-2 px-6 py-2 rounded-full bg-teal-500 text-black font-medium hover:bg-teal-400 transition"
+              className="flex items-center gap-2 px-6 py-2 rounded-full bg-teal-500 text-white font-medium hover:bg-teal-400 transition"
             >
               <ExternalLink size={18} />
               Live Demo
