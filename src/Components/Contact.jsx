@@ -65,7 +65,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl p-8"
+          className="bg-white/5 border border-white/10 backdrop-blur-xl md:w-full w-100 rounded-2xl p-8"
         >
           <form className="space-y-6">
             <div>

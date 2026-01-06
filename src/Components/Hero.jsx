@@ -15,52 +15,13 @@ const Hero = () => {
 
       <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         
-        {/* LEFT CONTENT */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          
-          <p className="text-sm uppercase tracking-widest text-teal-400 mb-4">
-            Frontend Developer
-          </p>
-
-          <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold text-white leading-tight">
-            Crafting{" "}
-            <span className="text-teal-400">digital experiences</span>
-            <br />
-            with precision.
-          </h1>
-
-          <p className="mt-6 text-gray-400 max-w-xl">
-            I’m a passionate frontend developer focused on building responsive,
-            clean, and user-friendly web interfaces using React.
-          </p>
-
-          <div className="mt-8 flex gap-4">
-            <a
-              href="#projects"
-              className="px-6 py-3 rounded-lg bg-teal-500 text-black font-medium hover:bg-cyan-400 transition"
-            >
-              View Projects
-            </a>
-
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="px-6 py-3 rounded-lg border border-teal-400 text-teal-400 hover:bg-teal-400 hover:text-black transition"
-            >
-              Download CV
-            </a>
-          </div>
-        </motion.div> */}
+     
               <motion.div
             variants={fadeUp}
             initial="hidden"
             animate="visible"
             transition={{ duration: 0.8 }}
-            className="space-y-6"
+            className="space-y-6 md:mt-0 mt-25"
           >
             <span className="relative inline-block  text-white text-2xl  font-semibold speech-bubble animate-bounce">
              👋 Hello, I am
