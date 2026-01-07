@@ -26,8 +26,9 @@ function App() {
        <Navbar></Navbar>
      <Hero></Hero>
      <TechStack></TechStack>
+       <About></About>
      <Skills></Skills>
-     <About></About>
+   
      <Services></Services>
      <Projects></Projects>
      <Contact></Contact>

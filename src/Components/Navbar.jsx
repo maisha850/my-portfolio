@@ -1,8 +1,10 @@
 import { useState } from "react";
+import Logo from "./Logo";
 
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Services", href: "#services" },
   { name: "Contact", href: "#contact" },
@@ -17,7 +19,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <a href="#home" className="text-teal-400 font-semibold text-lg">
-          MAISHA<span className="text-white">DEV</span>
+        <Logo></Logo>
         </a>
 
         {/* Desktop Nav */}

@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
-import { Mail, Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, LocationEdit, Locate, MapPin } from "lucide-react";
 import { useRef, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -35,7 +35,7 @@ setLoading(true)
       );
   };
   return (
-    <section id="contact" className="bg-[#0b0f14] py-24">
+    <section id="contact" className="bg-[#0b0f14]  py-24">
        <ToastContainer position="top-right" autoClose={3000} />
       <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -63,32 +63,65 @@ setLoading(true)
 
           {/* Contact Info */}
           <div className="mt-8 space-y-4">
-            <a
-              href="mailto:yourmail@example.com"
-              className="flex md:text-[16px] text-xs items-center gap-3 text-gray-300 hover:text-teal-400 transition"
-            >
-              <Mail size={20} />
-              tasnimmaisha08@gmail.com
-            </a>
-
-            <a
-              href="https://github.com/yourusername"
+         
+           <div className="  md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
+        
+             <a
+              href="mailto:tasnimmaisha08@gmail.com/"
               target="_blank"
               className="flex md:text-[16px] text-xs items-center gap-3 text-gray-300 hover:text-teal-400 transition"
             >
-              <Github size={20} />
-           https://github.com/maisha850
+                
+              <span className="md:w-12 md:h-12 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-teal-400 backdrop-blur-lg shadow-lg">
+                <Mail size={20} />
+              </span>
+<div>
+                 <h3 className="text-gray-400 text-sm">Email</h3>
+       <p>tasnimmaisha08@gmail.com</p>
+</div>
             </a>
-
-            <a
-              href="https://linkedin.com/in/yourusername"
+           </div>
+           <div className=" md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
+        
+             <a
+              href="https://web.whatsapp.com/"
               target="_blank"
               className="flex md:text-[16px] text-xs items-center gap-3 text-gray-300 hover:text-teal-400 transition"
             >
-              <Linkedin size={20} />
-           https://www.linkedin.com/in/maishatasnimkhan/
+                
+              <span className="md:w-12 md:h-12 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-teal-400 backdrop-blur-lg shadow-lg">
+                <Phone size={20} />
+              </span>
+<div>
+                 <h3 className="text-gray-400 text-sm">WhatsApp</h3>
+       <p>  +880 1788-271969</p>
+</div>
             </a>
+           </div>
+           <div className=" md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
+        
+             <a
+              href=""
+              target="_blank"
+              className="flex md:text-[16px] text-xs items-center gap-3 text-gray-300 hover:text-teal-400 transition"
+            >
+                
+              <span className="md:w-12 md:h-12 w-9 h-9 flex items-center justify-center rounded-full bg-white/10 border border-white/20 text-teal-400 backdrop-blur-lg shadow-lg">
+                <MapPin size={20} />
+              </span>
+<div>
+                 <h3 className="text-gray-400 text-sm">Location</h3>
+       <p> Dinajpur, Bangladesh</p>
+</div>
+            </a>
+           </div>
+
+          
           </div>
+          
         </motion.div>
 
         {/* RIGHT FORM */}
@@ -97,18 +130,19 @@ setLoading(true)
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="bg-white/5 border border-white/10 backdrop-blur-xl md:w-full w-80 rounded-2xl p-8"
+          className="bg-white/5 border border-white/10 backdrop-blur-xl md:w-full w-90 rounded-2xl p-8"
         >
          <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
-      
-      <div>
         <label className="block text-sm text-gray-400 mb-1">Name</label>
+      <div className="hover:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]">
+      
         <input
           type="text"
           name="name"
           required
           placeholder="Your Name"
-          className="w-full px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400"
+          className="w-full hover:border-teal-400 px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400"
         />
       </div>
 
@@ -116,32 +150,39 @@ setLoading(true)
         <label className="block text-sm text-gray-400 mb-1">
           Email Address
         </label>
-        <input
+       <div className="hover:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]">
+         <input
           type="email"
           name="email"
           required
           placeholder="email@gmail.com"
-          className="w-full px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400"
+          className="w-full px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400 focus:border-teal-400"
         />
+       </div>
       </div>
 
       <div>
         <label className="block text-sm text-gray-400 mb-1">
           Message
         </label>
-        <textarea
+       <div className="hover:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]">
+         <textarea
           rows="4"
           name="message"
           required
           placeholder="Tell me about your project"
-          className="w-full px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400 resize-none"
+          className="w-full hover:border-teal-400 px-4 py-3 rounded-lg bg-black/30 border border-white/10 text-white outline-none focus:border-teal-400  resize-none"
         />
+       </div>
       </div>
 
       <button
               type="submit"
               disabled={loading}
-              className={`w-full py-3 rounded-lg bg-teal-500 text-white font-medium transition ${
+              className={`w-full py-3 rounded-lg bg-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition text-white font-medium  ${
                 loading ? "opacity-70 cursor-not-allowed" : "hover:bg-teal-400"
               }`}
             >

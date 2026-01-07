@@ -4,15 +4,15 @@ const techs = [
   "Tailwind CSS",
   "HTML",
   "CSS",
-  "Git",
   "GitHub",
+  "Netlify",
   "Figma",
-  "Framer Motion",
+  "VS Code",
 ];
 
 const TechStack = () => {
   return (
-    <section className="bg-[#0b0f14] py-16 overflow-hidden border-y border-white/5">
+    <section className="bg-[#0b0f14] py-10 overflow-hidden border-y border-white/5">
       <div className="relative">
         
         {/* Gradient fade edges */}
@@ -24,7 +24,7 @@ const TechStack = () => {
           {[...techs, ...techs].map((tech, index) => (
             <span
               key={index}
-              className="text-gray-400 text-lg font-medium tracking-wide hover:text-cyan-400 transition"
+              className="text-gray-400 text-lg font-medium tracking-wide hover:text-teal-400 transition"
             >
               {tech}
             </span>

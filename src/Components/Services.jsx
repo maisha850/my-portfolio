@@ -9,7 +9,7 @@ const services = [
     icon: <Code2 size={26} />,
     terminal: true,
     description: [
-"React & Next.js applications",
+"React applications",
       "Tailwind CSS UI design",
       "Reusable components",
       "Performance optimization",
@@ -99,8 +99,9 @@ const Services = () => {
                 border border-white/10
                 bg-[#0f1620]
                 p-6
-                transition
-                hover:border-teal-400/40
+                hover:border-teal-400
+                hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition
                 ${
                   activeId === service.id
                     ? "shadow-[0_0_40px_rgba(45,212,191,0.15)]"

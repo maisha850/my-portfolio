@@ -95,7 +95,7 @@ const ProjectCard = ({ project, index }) => {
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="md:w-200 md:h-120 w-150 h-90 object-cover"
           />
 
           {/* subtle overlay */}
@@ -133,7 +133,8 @@ const ProjectCard = ({ project, index }) => {
             <a
               href={project.github}
               target="_blank"
-              className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 text-gray-300 hover:border-teal-400 hover:text-teal-400 transition"
+              className="flex items-center gap-2 px-5 py-2 rounded-full border border-white/20 text-gray-300 hover:border-teal-400 hover:text-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition"
             >
               <Github size={18} />
               Code
@@ -142,7 +143,8 @@ const ProjectCard = ({ project, index }) => {
             <a
               href={project.live}
               target="_blank"
-              className="flex items-center gap-2 px-6 py-2 rounded-full bg-teal-500 text-white font-medium hover:bg-teal-400 transition"
+              className="flex items-center gap-2 px-6 py-2 rounded-full bg-teal-500 text-white font-medium hover:bg-teal-400 hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)]  transition"
             >
               <ExternalLink size={18} />
               Live Demo

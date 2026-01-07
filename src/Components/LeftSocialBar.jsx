@@ -25,7 +25,7 @@ const LeftSocialBar = () => {
       initial={{ opacity: 0, x: -20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: 1 }}
-      className="fixed left-6 bottom-0 z-50 hidden md:flex flex-col items-center gap-5"
+      className="fixed left-4 bottom-4 z-50 flex flex-col items-center gap-5"
     >
       {/* Icons */}
       <div className="flex flex-col gap-4">

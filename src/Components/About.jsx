@@ -76,7 +76,8 @@ const About = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-6 hover:border-teal-400/40 transition"
+              className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-xl p-6 hover:border-teal-400  hover:shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+  hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] transition"
             >
               <h3 className="text-white font-semibold text-lg">
                 {item.title}
