@@ -67,7 +67,7 @@ const About = () => {
             },
             {
               title: "My Toolkit",
-              desc: "React, Tailwind CSS, MongoDB, Node.js, Firebase, and Framer Motion.",
+              desc: "React, Tailwind CSS, MongoDB, Node.js, Express.js, Firebase .",
             },
             {
               title: "Beyond Coding",

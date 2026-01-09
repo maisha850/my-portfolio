@@ -25,9 +25,9 @@ const Hero = () => {
           animate="visible"
           className="space-y-6 md:mt-0 mt-24"
         >
-          <span className="inline-block text-white text-2xl font-semibold animate-bounce">
-            👋 Hello, I am
-          </span>
+          <p className="inline-block text-white text-2xl font-semibold ">
+            <span className="wave">👋</span> Hello, I am
+          </p>
 
           <motion.h1
             variants={fadeUp}
@@ -109,14 +109,7 @@ const Hero = () => {
       className="w-full h-full rounded-full object-cover  transition duration-300"
     />
 
-    {/* Floating center icon/button */}
-    {/* <motion.div
-      animate={{ y: [0, -10, 0] }}
-      transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-      className="absolute left-1/2 -translate-x-1/2 -top-6 w-14 h-14 rounded-full bg-teal-500 shadow-lg flex items-center justify-center text-white text-xl font-bold"
-    >
-      ⚡
-    </motion.div> */}
+    
 
     {/* MERN Stack Developer Tag */}
     <div className="absolute bottom-2 right-2 md:bottom-4 md:right-4 bg-black/50 backdrop-blur-md md:px-4 px-3 py-2 md:py-3 rounded-full border border-teal-500/40 text-white uppercase md:text-sm text-xs font-semibold">

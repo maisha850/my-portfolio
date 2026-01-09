@@ -58,13 +58,13 @@ setLoading(true)
 
           <p className="text-gray-400 mt-6 max-w-md">
          
-            Feel free to reach out if you’d like to connect or collaborate.
+       Have an idea? Let’s build something amazing together
           </p>
 
           {/* Contact Info */}
           <div className="mt-8 space-y-4">
          
-           <div className="  md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+           <div className="  md:w-full w-80  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
   hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
         
              <a
@@ -82,7 +82,7 @@ setLoading(true)
 </div>
             </a>
            </div>
-           <div className=" md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+           <div className=" md:w-full w-80  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
   hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
         
              <a
@@ -100,7 +100,7 @@ setLoading(true)
 </div>
             </a>
            </div>
-           <div className=" md:w-full w-90  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
+           <div className=" md:w-full w-80  px-4 py-3 rounded-2xl bg-black/30 border border-white/10 text-white outline-none hover:border-teal-400  focus:border-teal-400 shadow-teal-400/10 shadow-[0_0_0px_0px_rgba(168,85,247,0)]
   hover:shadow-[0_0_35px_10px_rgba(168,85,247,0.8)] ">
         
              <a
@@ -130,7 +130,7 @@ setLoading(true)
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="bg-white/5 border border-white/10 backdrop-blur-xl md:w-full w-90 rounded-2xl p-8"
+          className="bg-white/5 border border-white/10 backdrop-blur-xl md:w-full w-80 rounded-2xl p-8"
         >
          <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
         <label className="block text-sm text-gray-400 mb-1">Name</label>
